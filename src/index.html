@@ -269,63 +269,65 @@
           <form class="filter__form">
             <h3 class="filter__title">Фильтры</h3>
 
-            <fieldset class="filter__field">
-              <legend class="filter__field-title">Цена</legend>
+           <div class="filter__fields-list">
+             <fieldset class="filter__field">
+               <legend class="filter__field-title">Цена</legend>
 
-              <div class="filter__flex">
-                <label><input type="number" name="price-start" placeholder="от" class="filter__input"></label>
-                <label><input type="number" name="price-end" placeholder="до" class="filter__input"></label>
-              </div>
-            </fieldset>
+               <div class="filter__flex">
+                 <label><input class="filter__input" type="number" name="price-start" placeholder="от"></label>
+                 <label><input class="filter__input" type="number" name="price-end" placeholder="до"></label>
+               </div>
+             </fieldset>
 
-            <fieldset class="filter__field">
-              <legend class="filter__field-title">Категория</legend>
+             <fieldset class="filter__field">
+               <legend class="filter__field-title">Категория</legend>
 
-              <label>
-                <select class="filter__select" name="category">
-                  <option value="" selected>Все категории</option>
-                  <option value="phone">Смартфоны</option>
-                  <option value="tab">Планшеты</option>
-                  <option value="clock">Умные часы</option>
-                  <option value="monoblock">Моноблоки</option>
-                  <option value="notebook">Ноутбуки</option>
-                </select>
-              </label>
-            </fieldset>
+               <label>
+                 <select class="filter__input filter__input_select" name="category">
+                   <option value="all" selected>Все категории</option>
+                   <option value="phone">Смартфоны</option>
+                   <option value="tab">Планшеты</option>
+                   <option value="clock">Умные часы</option>
+                   <option value="monoblock">Моноблоки</option>
+                   <option value="notebook">Ноутбуки</option>
+                 </select>
+               </label>
+             </fieldset>
 
-            <fieldset class="filter__field">
-              <legend class="filter__field-title">Диагональ</legend>
+             <fieldset class="filter__field">
+               <legend class="filter__field-title">Диагональ</legend>
 
-              <div class="filter__flex">
-                <label><input type="number" name="diagonal-start" placeholder="от" class="filter__input"></label>
-                <label><input type="number" name="diagonal-end" placeholder="до" class="filter__input"></label>
-              </div>
-            </fieldset>
+               <div class="filter__flex">
+                 <label><input type="number" name="diagonal-start" placeholder="от" class="filter__input"></label>
+                 <label><input type="number" name="diagonal-end" placeholder="до" class="filter__input"></label>
+               </div>
+             </fieldset>
 
-            <fieldset class="filter__field">
-              <legend class="filter__field-title">Цвет</legend>
+             <fieldset class="filter__field">
+               <legend class="filter__field-title">Цвет</legend>
 
-              <div class="filter__flex">
-                <label>
-                  <input class="filter__checkbox" name="color" value="Write" type="checkbox">Белый
-                </label>
-                <label>
-                  <input class="filter__checkbox" name="color" value="Black" type="checkbox">Чёрный
-                </label>
-                <label>
-                  <input class="filter__checkbox" name="color" value="Silver" type="checkbox">Серебристый
-                </label>
-                <label>
-                  <input class="filter__checkbox" name="color" value="Red" type="checkbox">Красный
-                </label>
-                <label>
-                  <input class="filter__checkbox" name="color" value="Green" type="checkbox">Зелёный
-                </label>
-                <label>
-                  <input class="filter__checkbox" name="color" value="Gold" type="checkbox">Золотой
-                </label>
-              </div>
-            </fieldset>
+               <div class="filter__flex filter__flex_column">
+                 <label>
+                   <input class="filter__checkbox" name="color" value="Write" type="checkbox">Белый
+                 </label>
+                 <label>
+                   <input class="filter__checkbox" name="color" value="Black" type="checkbox">Чёрный
+                 </label>
+                 <label>
+                   <input class="filter__checkbox" name="color" value="Silver" type="checkbox">Серебристый
+                 </label>
+                 <label>
+                   <input class="filter__checkbox" name="color" value="Red" type="checkbox">Красный
+                 </label>
+                 <label>
+                   <input class="filter__checkbox" name="color" value="Green" type="checkbox">Зелёный
+                 </label>
+                 <label>
+                   <input class="filter__checkbox" name="color" value="Gold" type="checkbox">Золотой
+                 </label>
+               </div>
+             </fieldset>
+           </div>
 
             <button class="filter__apply" type="submit">Применить фильтр</button>
 
@@ -334,10 +336,10 @@
         </aside>
 
         <div class="catalog__pagination pagination">
-          <a href="#" class="pagination__arrow pagination__arrow_start" aria-label="Перейти на первую страницу"></a>
+          <a href="" class="pagination__arrow pagination__arrow_start" aria-label="Перейти на первую страницу"></a>
           <ul class="pagination__list">
             <li class="pagination__item">
-              <a class="pagination__link pagination__active">1</a>
+              <a class="pagination__link pagination__link_active">1</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link">2</a>
@@ -365,8 +367,8 @@
 
 <footer class="footer">
   <h2 class="visually-hidden">Подвал сайта</h2>
-  <div class="container">
-    <a href="/">
+  <div class="container footer__container">
+    <a class="footer__logo-link" href="/">
       <img class="footer__logo" src="img/logo.svg" alt="Логотип Techno Shop">
     </a>
     <div class="footer__column">
@@ -396,7 +398,7 @@
       </ul>
     </div>
 
-    <div class="footer__column footer__contacts">
+    <div class="footer__column">
       <h3 class="footer__column-title">Контакты</h3>
 
       <ul class="footer__list footer__list_contacts">
