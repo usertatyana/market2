@@ -1,14 +1,15 @@
 .address {
-
   &__title {
     margin-bottom: 30px;
   }
+
   &__form {
-    display: grid;
+  display: grid;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  &__item_select {
+  &__label_select {
     position: relative;
 
     &:after {
@@ -31,29 +32,28 @@
     height: 50px;
     color: $color-grey;
     padding: 10px;
+
+    &_select {
+     appearance: none;
+    }
+
+    &_btn {
+      background-color: $color-primary;
+      color: $color-secondary;
+    }
   }
 
-  &_select {
-    appearance: none;
-  }
-
-  &_btn {
-    background-color: $color-primary;
-    color: $color-secondary;
-    border: 0;
-  }
 
   &__label-save {
     display: flex;
     align-items: center;
-    grid-column: -2;
+    gap: 8px;
+    grid-column: 3;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: $color-grey;
   }
 }
-
-
 
 
