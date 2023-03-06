@@ -30,11 +30,4 @@
       animation: rotation 1s infinite linear;
     }
   }
-
-  @keyframes rotation {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
 }
