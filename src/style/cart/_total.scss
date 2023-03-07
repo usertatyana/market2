@@ -132,6 +132,11 @@
 
   &__agree-link {
     color: $color-primary;
+    transition: color 0.36s ease-in-out;
+
+    &:hover {
+      color: $color-main;
+    }
   }
 
 }

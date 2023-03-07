@@ -124,6 +124,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
+    transition: color 0.36s ease-in-out;
+
+    &:hover {
+      color: $color-main;
+    }
   }
 
   &__design {
@@ -134,5 +139,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
+    transition: color 0.36s ease-in-out;
+
+    &:hover {
+      color: $color-main;
+    }
   }
 }

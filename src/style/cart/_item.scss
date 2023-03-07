@@ -112,6 +112,11 @@
     background-color: transparent;
     font-size: 30px;
     line-height: 100%;
+    transition: color 0.36s ease-in-out;
+
+    &:hover {
+      color: $color-main-sub;
+    }
   }
 
   &__number {
@@ -138,6 +143,11 @@
     border: none;
     background-color: transparent;
     color: $color-grey-light;
+    transition: color 0.36s ease-in-out;
+
+    &:hover {
+      color: $color-main;
+    }
 
     @include mobile {
       min-width: 18px;
